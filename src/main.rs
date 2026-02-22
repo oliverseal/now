@@ -303,6 +303,10 @@ fn build_listing_output(
         }
     }
 
+    if entries.is_empty() {
+        return String::new();
+    }
+
     let label_w = max_label_len + 2;
     let time_base_w = if hour24 { 5 } else { 8 };
 
@@ -473,7 +477,8 @@ fn run_interactive(
             night_emoji.clone(),
         );
 
-        write!(stdout, "{}", output)?;
+        print!("{}", output);
+        stdout.flush()?;
 
         // Handle input
         if event::poll(std::time::Duration::from_millis(100))? {
