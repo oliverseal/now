@@ -1,0 +1,27 @@
+config:
+  hour24: false
+  emoji: true
+  local_label: "Local Time"
+  # Customize the emoji used for day/night indicators
+  day_emoji: "🌞"      # Shown for hours 7-18 (or sunrise-sunset with emoji-sun feature)
+  night_emoji: "🌙"    # Shown for other hours
+
+timezones:
+  - label: "Mom"
+    zone:  "America/Chicago"
+
+  - label: "Office"
+    zone:  "America/Los_Angeles"
+    lat: 37.7749
+    lon: -122.4194
+
+  - label: "UTC"
+    zone:  "UTC"
+
+  - label: "Kyoto"
+    zone:  "Asia/Tokyo"
+    lat: 35.6762
+    lon: 139.6503
+
+  - label: "London"
+    zone:  "Europe/London"

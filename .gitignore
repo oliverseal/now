@@ -1,0 +1,28 @@
+# Rust build artifacts
+target/
+**/*.rs.bk
+*.pdb
+
+# Editor files
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# IDEs
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Cargo
+Cargo.lock
+.cargo/
+.rustup/
+
+# User-specific config (not committed)
+**/.config/now/timezones.yaml
+**/timezones.yaml
+
+.claude
